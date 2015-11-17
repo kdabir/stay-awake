@@ -3,7 +3,7 @@ Stay Awake
 
 Keeps you machine awake and unlocked by making a mouse move at regular interval. 
 
-Stay Awake is
+Stay Awake is:
 * Platform independent - Works on OS X, Windows and Linux
 * Ultra light - total distribution size around 10 kb
 * No library dependencies
@@ -52,4 +52,4 @@ SOFTWARE.
 ### Disclaimer
 
 - Please make sure that usage of this program is in accordance with your organizations security policies.
-- While this app is not known to cause any damages, the authors of this program shall not be held responsible for any such incedent.
+- While this app is not known to cause any damages, the author(s) of this program shall not be responsible for any such incident.
