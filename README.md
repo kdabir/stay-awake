@@ -1,6 +1,5 @@
 Stay Awake
----------
-
+-------
 Keep your machine awake and unlocked by making a mouse move at regular interval. Start it when you are not actively using 
 your machine.
 
@@ -12,14 +11,14 @@ Stay Awake is:
 ### Installation
 
 - Make sure we have JRE on machine
-- Download the application distribution archive and extract it
-- [optional] Add the "<extracted_archives_path>/bin" to `PATH` 
+- [Download](https://github.com/kdabir/stay-awake/releases) the application distribution archive and extract it
+- (optional) Add the `{extracted_archives_path}/bin` to `PATH` env variable 
 
 
 ### Usage
 * Run the bat (on Windows) or shell file (on OS X / Linux)
     - by double clicking the file
-    - or if we have it on PATH, just call the script `stay-awake`
+    - or if we have it on `PATH`, just call the script `stay-awake`
     
 * We can optionally pass a number representing interval in seconds. Mouse moves at this interval. Recommended value is between 15 - 90. 
 
@@ -38,7 +37,7 @@ We should have `gradle` locally Change the requires files and then from the proj
     1. run  
       `gradle clean dZ && cd build/distributions && unzip -o stay-awake.zip && cd -`
   
-    2. And then   
+    2. and then   
       `./build/distributions/stay-awake/bin/stay-awake 10`
 
 - We can run/debug the Main class with IntelliJ Idea or any IDE of our choice as well. 
