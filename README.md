@@ -1,7 +1,7 @@
 Stay Awake
 ---------
 
-Keeps you machine awake and unlocked by making a mouse move at regular interval. Start it when you are not actively using 
+Keep your machine awake and unlocked by making a mouse move at regular interval. Start it when you are not actively using 
 your machine.
 
 Stay Awake is:
