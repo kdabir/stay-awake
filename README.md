@@ -11,17 +11,37 @@ Stay Awake is:
 
 ### Installation
 
-- Make sure you have JRE on machine
+- Make sure we have JRE on machine
 - Download the application distribution archive and extract it
 - [optional] Add the "<extracted_archives_path>/bin" to `PATH` 
 
 
 ### Usage
-- Run the bat (on Windows) or shell file (on OS X / Linux)
+* Run the bat (on Windows) or shell file (on OS X / Linux)
     - by double clicking the file
-    - or if you have it on PATH, just call the script `stay-awake`
-- To stop, press `control+c` 
+    - or if we have it on PATH, just call the script `stay-awake`
+    
+* We can optionally pass a number representing interval in seconds. Mouse moves at this interval. Recommended value is between 15 - 90. 
 
+* To stop, press `control+c` 
+
+
+### Developer Notes
+
+We should have `gradle` locally Change the requires files and then from the project root:
+
+- Simplest way is to run with Gradle `run`
+    
+    `$ gradle run`
+
+- To run with generated OS specific scripts:
+    1. run  
+      `gradle clean dZ && cd build/distributions && unzip -o stay-awake.zip && cd -`
+  
+    2. And then   
+      `./build/distributions/stay-awake/bin/stay-awake 10`
+
+- We can run/debug the Main class with IntelliJ Idea or any IDE of our choice as well. 
 
 ### LICENSE
 

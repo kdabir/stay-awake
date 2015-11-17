@@ -3,13 +3,27 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 class Main {
-    public static final int ONE_SECOND = 1000;
-    public static final int DEFAULT_PERIOD = 30 * ONE_SECOND; // in ms
+    public static final long ONE_SECOND = 1000;
+    public static final long DEFAULT_FREQUENCY = 30; //seconds
 
+    /**
+     * First argument to the program can be a number representing interval in seconds, after which mouse will move.
+     * Recommended value is between 15 - 90.
+     *
+     * @param args
+     * @throws AWTException
+     */
     public static void main(String[] args) throws AWTException {
         final MovableMouse mouse = new MovableMouse();
-        final Point startLocation = mouse.getLocation();
         final Timer timer = new Timer();
+        long frequencyInSeconds = DEFAULT_FREQUENCY;
+
+        try {
+            frequencyInSeconds = (args.length > 0) ? Long.parseLong(args[0]) : DEFAULT_FREQUENCY;
+        } catch (Exception e) {
+            System.err.println(e);
+            System.exit(1);
+        }
 
         TimerTask timerTask = new TimerTask() {
             @Override
@@ -23,16 +37,15 @@ class Main {
             @Override
             public void run() {
                 System.out.println("Bye bye");
-                mouse.setLocation(startLocation);
             }
         });
 
-        timer.schedule(timerTask, 0, DEFAULT_PERIOD);
+        timer.schedule(timerTask, ONE_SECOND, frequencyInSeconds * ONE_SECOND );
     }
 }
 
 class MovableMouse {
-    private Robot robot;
+    private final Robot robot;
 
     private int autoDelay = 100,
         buzzDistance = 5,
