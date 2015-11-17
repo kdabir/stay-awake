@@ -1,12 +1,13 @@
 Stay Awake
 ---------
 
-Keeps you machine awake and unlocked by making a mouse move at regular interval. 
+Keeps you machine awake and unlocked by making a mouse move at regular interval. Start it when you are not actively using 
+your machine.
 
 Stay Awake is:
 * Platform independent - Works on OS X, Windows and Linux
 * Ultra light - total distribution size around 10 kb
-* No library dependencies
+* Self contained - No library dependencies
 
 ### Installation
 
