@@ -1,9 +1,9 @@
 apply plugin: 'application'
 
-version = "0.1"
+version = "0.2"
 
-sourceCompatibility = '1.6'
-targetCompatibility = '1.6'
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
 
 sourceSets.main.java.srcDirs = ['src']
 mainClassName = "Main"
